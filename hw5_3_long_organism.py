@@ -14,8 +14,7 @@ class LongOrganism(Organism):
 			self.region = region
 
 
-	def description(self):
-			#Organism.description(self)
+	def more_description(self):
 			print('Ploidy:', self.ploidy, "\n",
 				  'Genome size:', self.size, 'Mbp',"\n",
 				  'Chromosome number (2n):', self.number, "\n",
@@ -23,6 +22,15 @@ class LongOrganism(Organism):
 			
 
 
-Cc = LongOrganism('Eukarya', 'Plantae', 'Anthophyta', 'Eudicotyledonae', 'Solanales', 'Convolvulaceae', 'Cuscuta', 'Cuscuta campestris', 'golden dodder', 2, 581, 56, 'North America')
-print(Cc.description())
+#Cc = LongOrganism('Eukarya', 'Plantae', 'Anthophyta', 'Eudicotyledonae', 'Solanales', 'Convolvulaceae', 'Cuscuta', 'Cuscuta_campestris', 'golden_dodder', 2, 581, 56, 'North_America')
+#print(Cc.description())
+#print(Cc.more_description())
+#print(Cc.string_description())
+
+#Cp = LongOrganism('Eukarya', 'Plantae', 'Anthophyta', 'Eudicotyledonae', 'Solanales', 'Convolvulaceae', 'Cuscuta', 'Cuscuta_pentagona', 'fiveangled_dodder', 2, 'unknown ', 56, 'North_America')
+#print(Cp.description())
+#print(Cp.more_description())
+#print(Cp.string_description())
+
+
 

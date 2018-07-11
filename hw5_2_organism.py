@@ -37,6 +37,14 @@ class Organism:
                        'Species:',self.Species, "\n",
                        'Common_name:',self.common_name, sep = "")
 
-Cc = Organism('Eukarya', 'Plantae', 'Anthophyta', 'Eudicotyledonae', 'Solanales', 'Convolvulaceae', 'Cuscuta', 'Cuscuta campestris', 'golden dodder')
-print(Cc.description())
+	def string_description(self):
+		return self.Domain+self.Kingdom+self.Phylum+self.Class+self.Order+self.Family+self.Genus+self.Species+self.common_name
 
+
+#Cc = Organism('Eukarya', 'Plantae', 'Anthophyta', 'Eudicotyledonae', 'Solanales', 'Convolvulaceae', 'Cuscuta', 'Cuscuta_campestris', 'golden_dodder')
+#print(Cc.description())
+#print(Cc.string_description())
+
+#Cp = Organism('Eukarya', 'Plantae', 'Anthophyta', 'Eudicotyledonae', 'Solanales', 'Convolvulaceae', 'Cuscuta', 'Cuscuta_pentagona', 'fiveangled_dodder')
+#print(Cp.description())
+#print(Cp.string_description())
